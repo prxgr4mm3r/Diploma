@@ -1,0 +1,23 @@
+{
+    "name": "merkle-proof-test",
+    "version": "1.0.0",
+    "description": "Тестування протоколів ZKP для задачі доведення належності в дереві Меркла",
+    "main": "index.js",
+    "scripts": {
+        "generate-tree": "node scripts/generate_merkle_tree.js",
+        "build": "node scripts/build_circuit.js",
+        "setup": "node scripts/setup.js",
+        "prove": "node scripts/generate_proof.js",
+        "verify": "node scripts/verify_proof.js",
+        "benchmark": "node scripts/benchmark.js",
+        "visualize": "node scripts/visualize_benchmark.js",
+        "all": "npm run generate-tree && npm run build && npm run setup && npm run prove && npm run verify && npm run benchmark"
+    },
+    "dependencies": {
+        "canvas": "^3.1.0",
+        "chartjs-node-canvas": "^5.0.0",
+        "circomlib": "^2.0.5",
+        "circomlibjs": "^0.1.7",
+        "snarkjs": "^0.7.0"
+    }
+}
