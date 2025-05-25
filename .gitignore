@@ -17,7 +17,7 @@ build/
 inputs/
 
 # Generated charts
-charts/
+# charts/
 
 # IDE and editor files
 .vscode/
